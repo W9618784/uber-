@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c1"
+        tools:context=".fragments.ProfileFragment">
+
+    <!-- res/layout/fragment_profile.xml -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/proo"/>
+        <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="6dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Username:"
+                android:textSize="18sp" />
+
+        <TextView
+                android:id="@+id/phoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameTextView"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Phone:"
+                android:textSize="18sp" />
+
+        <TextView
+                android:id="@+id/roleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneTextView"
+                android:layout_marginTop="8dp"
+                android:text="Role:"
+                android:padding="6dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp" />
+        <fragment
+                android:id="@+id/mapFragment"
+                android:layout_marginTop="10dp"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottomLayout" />
+        <!-- Add more TextViews for other user information if needed -->
+
+    </LinearLayout>
+
+
+</FrameLayout>

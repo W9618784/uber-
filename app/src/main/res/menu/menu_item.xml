@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/newcourse"
+          android:title="Driver List"
+          app:showAsAction="always|withText"
+          android:icon="@drawable/roads"/>
+    <item android:id="@+id/mapmenuitem"
+          android:title="Maps"
+          app:showAsAction="always|withText"
+          android:icon="@drawable/worldwide"/>
+    <item android:id="@+id/chatmenuitem"
+          android:title="Profile"
+          app:showAsAction="always|withText"
+          android:icon="@drawable/proo"/>
+    <item android:id="@+id/ordersMenuItem"
+          android:title="Order History"
+          app:showAsAction="always|withText"
+          android:icon="@drawable/history"/>
+    <item android:id="@+id/logoutmenuitem"
+          android:title="Logout"
+          app:showAsAction="always|withText"
+          android:icon="@drawable/logout"/>
+
+
+
+</menu>
